@@ -11,7 +11,7 @@ mycursor = mydb.cursor()
 
 # Create the database (ignore error if it already exists)
 try:
-    sql = "CREATE DATABASE alx_book_store"
+    sql = "CREATE DATABASE IF NOT EXISTS alx_book_store"
     mycursor.execute(sql)
     print("Database 'alx_book_store' created successfully!")
 except mysql.connector.Error as err:

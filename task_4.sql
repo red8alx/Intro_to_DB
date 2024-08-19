@@ -1,6 +1,3 @@
 
-SELECT COLUMN_NAME
-FROM 
-    INFORMATION_SCHEMA.COLUMNS
-WHERE 
-    TABLE_SCHEMA = 'alx_book_store' AND TABLE_NAME = 'books';
+USE `alx_book_store`;
+SHOW FULL COLUMNS FROM `books`;
